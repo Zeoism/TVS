@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Delete Message</h2>
+<p>Are you sure you wanna delete comment「{{object}}」?</p>
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="submit" action="" value="Confirm" class = button7>
+    
+    <a href = "/message/" class = button6>⤺Back</a>
+</form>
+{% endblock content %}

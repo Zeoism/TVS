@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Name</h2>
+    {{ message.user }}<BR>
+    <h2>Subject</h2>
+    {{ message.subject }}<BR>
+    <h2>Content</h2>
+    {{ message.content|linebreaks }}<BR>
+    
+    <a href = "/message/" class = button6>⤺Back</a>
+{% endblock content %}
