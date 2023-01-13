@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Name</h2>
+    <h2>Teacher Name</h2>
     {{ message.user }}<BR>
-    <h2>Subject</h2>
+    <h2>Majors</h2>
     {{ message.subject }}<BR>
-    <h2>Content</h2>
+    <h2>Comment</h2>
     {{ message.content|linebreaks }}<BR>
-    
+    <a href = "{% url 'expense_create' message.id %}" class = button7>➕Add Score</a>
     <a href = "/message/" class = button6>⤺Back</a>
 {% endblock content %}

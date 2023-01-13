@@ -22,4 +22,5 @@ urlpatterns = [
     path('message/', include('web.urls')),
     path('', RedirectView.as_view(url='message/')),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('expenses/', include('expenses.urls')),
 ]
